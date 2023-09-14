@@ -3,6 +3,7 @@ import settings
 import matplotlib.pyplot as plt
 import cv2
 import numpy as np
+from CVUtils import CVUtils
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
@@ -10,7 +11,7 @@ plt.rcParams['axes.unicode_minus'] = False
 
 def detect_one_from_filepath(img_path, model=tf.keras.models.load_model(settings.model_path)):
     if settings.size[2] == 3:
-        img = cv2.imread(img_path)
+        img = CVUtils.read_image(img_path)
         # 对单张图片进行检测
         img = img[:, :, ::-1]
         # resize
