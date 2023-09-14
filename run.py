@@ -60,7 +60,7 @@ class MainForm(QMainWindow, Ui_MainWindow):
 
     def open_image(self):
         self.stopAllTimer()
-        file_path, _ = QFileDialog.getOpenFileName(self, '选择图片', 'data', "Image files (*.jpg *.jpeg, *.png)")
+        file_path, _ = QFileDialog.getOpenFileName(self, '选择图片', settings.path, "Image files (*.jpg *.jpeg, *.png)")
         # 当不为空时，显示图片
         if file_path:
             self.input.setPixmap(QPixmap(file_path))
