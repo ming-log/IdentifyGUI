@@ -67,7 +67,7 @@ python run.py
 
 # 在使用的时候可能根据不同的操作系统出现一些问题
 
-为了适配所有的操作系统，在此也提供该`GUI`界面`Pyinstaller`打包的打包软件，[点击此处获取百度云链接](https://pan.baidu.com/s/1xfT91ToNS6go2XClGbX6uA?pwd=ming)
+为了适配所有的操作系统，在此也提供该`GUI`界面`Pyinstaller`打包的打包软件，[点击此处获取百度云链接](https://pan.baidu.com/s/1x2q3cyi9W75yV_uYGCySpw?pwd=ming)
 
 下载解压后文件结构如下所示：
 
