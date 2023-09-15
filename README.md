@@ -37,6 +37,8 @@ pip install -r requirements.txt
 
 4. `model_path`：模型的存储路径。
 
+   > 需要提前将模型文件存放到`model`文件夹。
+
 5. `path`：检测的数据路径。
 
 6. `size`：图片的统一尺寸大小。
@@ -62,3 +64,20 @@ python run.py
 检测结果将展示在右侧。
 
 ![image-20230913200037709](https://ming-log.oss-cn-hangzhou.aliyuncs.com/img/image-20230913200037709.png)
+
+# 在使用的时候可能根据不同的操作系统出现一些问题
+
+为了适配所有的操作系统，在此也提供该`GUI`界面`Pyinstaller`打包的打包软件，[点击此处获取百度云链接](https://pan.baidu.com/s/1xfT91ToNS6go2XClGbX6uA?pwd=ming)
+
+下载解压后文件结构如下所示：
+
+![image-20230915111333186](https://ming-log.oss-cn-hangzhou.aliyuncs.com/img/image-20230915111333186.png)
+
+- `data`：用于存放待预测图片。
+- `model`：用于存放模型文件。
+- `run`：打包好的软件。
+- `setting.py`：配置文件，作用和用法和前面一致。
+
+启动文件位于`run/run.exe`，直接打开`run.exe`后会自动去加载`settings.py`中的配置项。
+
+> 注意：第一次打开软件时，回去加载相应的环境速度会较慢。
